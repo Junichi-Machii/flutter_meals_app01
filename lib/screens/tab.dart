@@ -65,6 +65,7 @@ class _TabScreenState extends ConsumerState<TabScreen> {
 
     return Scaffold(
       appBar: AppBar(
+        
         title: Text(activePageTitle),
       ),
       drawer: MainDrawer(
