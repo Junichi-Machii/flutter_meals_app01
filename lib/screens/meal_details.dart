@@ -23,7 +23,7 @@ class MealDetails extends ConsumerWidget {
         actions: [
           IconButton(
             onPressed: () {
-            final wasAdded =  ref
+              final wasAdded = ref
                   .read(favoriteMealsProvider.notifier)
                   .toggleMealFavoriteStatus(meal);
               ScaffoldMessenger.of(context).clearSnackBars();
@@ -34,7 +34,19 @@ class MealDetails extends ConsumerWidget {
                 ),
               );
             },
-            icon:  Icon(isFavoriete ? Icons.star : Icons.star_border),
+            icon: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 600),
+              transitionBuilder: (child, animation) {
+                return RotationTransition(
+                  turns: Tween<double>(
+                    begin: 0.7,
+                    end: 1.0,
+                  ).animate(animation),
+                  child: child,
+                );
+              },
+              child: Icon(isFavoriete ? Icons.star : Icons.star_border, key: ValueKey(isFavoriete),),
+            ),
           ),
         ],
       ),
