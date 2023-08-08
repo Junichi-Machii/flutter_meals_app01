@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1093889197647",
+    "project_id": "flutter-meal-webapp",
+    "storage_bucket": "flutter-meal-webapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093889197647:android:eb6572ccf1cf4154d30c3a",
+        "android_client_info": {
+          "package_name": "com.example.flutter_meals_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093889197647-ostr73skcb5t89pq81glu8mqvdmjrhjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNI5AdDuNZL_daRbLIVKZc8pf50pAYREI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093889197647-ostr73skcb5t89pq81glu8mqvdmjrhjl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1093889197647-c4btm9ldss5c2b585hib9uedj321ocht.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterMealsApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
